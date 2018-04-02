@@ -165,24 +165,22 @@ $(document).ready(function(){
 	// var musingsLink = document.getElementById("navMusings");
 	var contactLink = document.getElementById("navContact");
 
+	var logoWhite = document.getElementsByClassName("logo_white")[0]
+
 	// When user clicks button, open Modal
 	var modalOn = function(){
 	   modal.style.display = "block";
-	   // background.style.backgroundImage = "url('./resources/matthew_wide.jpg')"
-	   // background.style.backgroundSize = "cover";
-	   // background.style.backgroundPosition = "center";
 	   modalSign.style.display = "block";
 	   btn.style.display = "none";
+	   logoWhite.style.display = "none"
 	}
 
 	// When user clicks Close (x), close Modal
 	var modalOff = function(){
 	   modal.style.display = "none";
-	   // background.style.backgroundImage = "url('./resources/matthew_wide.jpg')"
-	   // background.style.backgroundSize = "cover";
-	   // background.style.backgroundPosition = "center";
 	   modalSign.style.display = "none"
 	   btn.style.display = "block";
+	   logoWhite.style.display = "block"
 	};
 
 
