@@ -21,10 +21,10 @@ body, html{
 	height: 100px;
 	/*margin-left: -50px;
 	margin-right: -50px;*/
-	width: 76%;
+	width: 81%;
 	color: #FAB83D;
 	opacity: 3;
-	transition: 2s ease;
+	transition: 6s ease;
 	letter-spacing: 0.5px;
 	text-rendering: geometricPrecision;
 }
@@ -66,21 +66,21 @@ body, html{
 }
 
 .typeThree{
-	margin-top: 20px;
+	margin-top: 26px;
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
 	color: white;
 }
 
 .typeFour{
-	margin-top: 20px;
+	margin-top: 26px;
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
 	color: white;
 }
 
 .typeFive{
-	margin-top: 20px;
+	margin-top: 26px;
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
 	color: white;
@@ -92,7 +92,7 @@ body, html{
 }
 
 .typeSix{
-	margin-top: 45px;
+	margin-top: 26px;
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
 	color: white;
@@ -104,14 +104,14 @@ body, html{
 	color: white;
 }
 
-.typeEight{
+/*.typeEight{*/
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
-	color: white;
-}
+	/*color: white;*/
+/*}*/
 
 .typeNine{
-	margin-top: 40px;
+	margin-top: 26px;
 	/*font-size: 1.2em;*/
 	/*width: 80vw;*/
 	color: white;
@@ -239,7 +239,7 @@ body, html{
 	height: 100%;
 	width: 100%;
 	opacity: 1;
-	transition: 2s ease;
+	transition: 3s ease;
 	background-color: rgba(0,0,0,0.7); 
 	display: block;
 }
@@ -371,7 +371,7 @@ body, html{
     display: block;
 	position: absolute;
 	right: 25px;
-	top: 65px;
+	top: 54px;
 	width: 70px;
 	height: 70px;
 	background-image: url(./resources/Burger_white.png);
@@ -379,6 +379,7 @@ body, html{
 	background-size: 35px 30px;
 	border: none;
 	outline: none;
+	transition: 3s ease;
 }
 
 @media only screen and (max-width: 980px) {
@@ -458,6 +459,9 @@ body, html{
 
 .modal-body {
     padding: 2px 16px;
+    font-family: matthewFont;
+    text-rendering: geometricPrecision;
+    font-weight: 100;
 }
 
 .modal-footer {
@@ -486,7 +490,7 @@ body, html{
     display: block;
 	position: absolute;
 	right: 25px;
-	top: 65px;
+	top: 54px;
 	width: 70px;
 	height: 70px;
 	background-repeat: no-repeat;
@@ -550,6 +554,19 @@ body, html{
     clear: both;
     width: 100%;
     text-align: center;
+}
+
+#comingSoon{
+	 /*top: 50%;*/
+    left: 50%;
+    margin-right: -50%;
+	position: absolute;
+	font-size: 12px;
+}
+
+#navContact{
+	/*position: absolute;*/
+	margin-top: 70px;
 }
 
 

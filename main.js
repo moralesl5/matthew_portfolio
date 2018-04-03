@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 	// About Section
 	var aboutDiv = $(".about")
+	var hamburger = $(".menu");
 
 	// var textOne = document.getElementsByClassName("typeOne")[0];
 	// var textTwo = document.getElementsByClassName("typeTwo")[0];
@@ -21,11 +22,13 @@ $(document).ready(function(){
 	// Get overlay element
 	var overlay = $(".overlay");
 	setTimeout(function(){
+		hamburger.removeClass('hidden');
 		overlay.removeClass('hidden');
 		aboutDiv.removeClass('hidden');
     	setTimeout(function () {
+      		hamburger.removeClass('visuallyHidden');
       		overlay.removeClass('visuallyHidden');
-      		aboutDiv.removeClass('visuallyHidden')
+      		aboutDiv.removeClass('visuallyHidden');
     	}, 20);
 
   //   	var typewriter = new Typewriter(textOne, {
@@ -137,7 +140,7 @@ $(document).ready(function(){
 		// 	.start();
 
 
-	}, 3000);
+	}, 2000);
 
 	// $.backstretch("./resources/matthew_main.jpg");
 
@@ -202,10 +205,6 @@ $(document).ready(function(){
 		contactDiv.style.display = "none"
 	}
 
-	aboutLink.onclick = function(){
-		modalOff();
-		// showAbout();
-	};
 
 	contactLink.onclick = function(){
 		modalOff();
