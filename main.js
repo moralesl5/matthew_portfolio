@@ -147,6 +147,9 @@ $(document).ready(function(){
 	// Get Modal
 	var modal = document.getElementById('myModal');
 	    
+	// Get logo
+	var logoWhite = document.getElementsByClassName("logo_white")[0];
+
 	// Get pseudoelement to open Modal
 	var btn = document.getElementById("sized");
 
@@ -197,14 +200,22 @@ $(document).ready(function(){
 	// }
 
 	var showContact = function(){
-		aboutDiv.style.display = "none";
+		aboutDiv.css("display", "none")
 		contactDiv.style.display = "block";
+		overlay.css("background-color","rgba(0,0,0,0.3)")
 	}
 
 	var hideContact = function(){
 		contactDiv.style.display = "none"
 	}
 
+	logoWhite.onclick = function(){
+		aboutDiv.css("transition", "");
+		aboutDiv.css("display", "block");
+		overlay.css("background-color","rgba(0,0,0,0.7)")
+		contactDiv.style.display = "none";
+
+	}
 
 	contactLink.onclick = function(){
 		modalOff();
@@ -224,7 +235,7 @@ $(document).ready(function(){
 	 window.onclick = function(event) {
 	    if (event.target == modal) {
 	       modal.style.display = "none";
-	       }
+	    }
 	 }
 });
 // END OF jQUERY

@@ -1,5 +1,1 @@
-Not sure if this is useful, but the picture of Matthew is overlaid with black with two different opacities in photoshop. You will probably do it differently in CSS.
-
-Contact page: Black is at 40%
-
-About page: Black is at 70%
+notice the opacity changes, lighter...

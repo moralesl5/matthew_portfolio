@@ -191,6 +191,45 @@ body, html{
 	
 }
 
+.contact{
+	margin-top: 30%;
+	text-align: center;
+	display: none;
+	font-family: matthewFont;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	position: relative;
+	color: white;
+	opacity: 3;
+	letter-spacing: 0.5px;
+	text-rendering: geometricPrecision;
+}
+
+.contactText a{
+	text-decoration: none;
+	color: #FAB83D;
+}
+
+.contactLinks{
+	margin-top: 40px;
+	list-style-type: none;
+}
+
+.contactLinks li{
+	display: inline;
+	padding: 10px 7px;
+}
+
+.contactLinks li a{
+	text-decoration: none;
+}
+
+.contactLinks li a img{
+	height: 50px;
+	width: 50px;
+}
+
 /*.container {
  	background-image:  url(./resources/Logo_white.png), url(./resources/matthew_main.jpg);
 	background-repeat: no-repeat;
@@ -256,12 +295,14 @@ body, html{
 	position: absolute;
 	left: 5%;
 	top: 2%;
-}
-
-.logo_white img{
 	width: 300px;
 	height: auto;
+	cursor: pointer;
 }
+
+/*.logo_white img{
+	
+}*/
 
 .logo_black{
 	position: absolute;
