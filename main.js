@@ -147,8 +147,11 @@ $(document).ready(function(){
 	// Get Modal
 	var modal = document.getElementById('myModal');
 	    
-	// Get logo
+	// Get white logo
 	var logoWhite = document.getElementsByClassName("logo_white")[0];
+
+	// Get black logo
+	var logoBlack = document.getElementsByClassName("logo_black")[0];
 
 	// Get pseudoelement to open Modal
 	var btn = document.getElementById("sized");
@@ -214,7 +217,14 @@ $(document).ready(function(){
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
 		contactDiv.style.display = "none";
+	}
 
+	logoBlack.onclick = function(){
+		modalOff();
+		aboutDiv.css("transition", "");
+		aboutDiv.css("display", "block");
+		overlay.css("background-color","rgba(0,0,0,0.7)")
+		contactDiv.style.display = "none";
 	}
 
 	contactLink.onclick = function(){

@@ -300,19 +300,13 @@ body, html{
 	cursor: pointer;
 }
 
-/*.logo_white img{
-	
-}*/
-
 .logo_black{
 	position: absolute;
 	left: 5%;
 	top: 2%;
-}
-
-.logo_black img{
 	width: 300px;
 	height: auto;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 980px) {
@@ -320,9 +314,6 @@ body, html{
 		position: absolute;
 		left: 5%;
 		top: 2%;
-	}
-
-	.logo_white img{
 		width: 175px;
 		height: auto;
 	}
@@ -331,13 +322,9 @@ body, html{
 		position: absolute;
 		left: 5%;
 		top: 2%;
-	}
-
-	.logo_black img{
 		width: 175px;
 		height: auto;
 	}
-
 }
 
 /*.black:before {
