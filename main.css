@@ -561,6 +561,17 @@ body, html{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 980px) {
+	.close{
+		right: 15px;
+		top: 35px;
+		width: 50px;
+		height: 50px;
+		background-size: 25px 20px;
+	}
+
+}
+
 @-webkit-keyframes zoomIn {
     from {
         opacity: 0;
@@ -682,6 +693,13 @@ body, html{
   
 /*Landscape-Phone Downwards*/
 @media (max-width: 480px) {
+
+	#comingSoon{
+		left: 40%;
+    	margin-right: -50%;
+		position: absolute;
+		font-size: 12px;
+	}
 
     /*.nav ul li{
         display: block;
