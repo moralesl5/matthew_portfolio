@@ -226,6 +226,14 @@ body, html{
 	text-rendering: geometricPrecision;
 }
 
+@media only screen and (max-width: 380px) {
+	.contact{
+		margin-top: 110%;
+	}
+}
+
+
+
 .contactText a{
 	text-decoration: none;
 	color: #FAB83D;
@@ -606,11 +614,14 @@ body, html{
 }
 
 #comingSoon{
-	 /*top: 50%;*/
-    left: 50%;
+   	left: 50%;
     margin-right: -50%;
 	position: absolute;
 	font-size: 12px;
+}
+
+#comingSoon span{
+	text-align: center;
 }
 
 #navContact{
@@ -624,7 +635,7 @@ body, html{
 /* Portrait Tablet to Landscape and Desktop */
 @media (min-width:768px) and (max-width:979px) {
 
-    .nav ul li{
+    /*.nav ul li{
         display: block;
         height: 45px;
     }
@@ -642,7 +653,7 @@ body, html{
         font-weight: 700;
         font-size: 6vw;
         letter-spacing: -0.05em;
-    }
+    }*/
 }
 
 /* Landscape-Phone to Portrait Tablet*/
@@ -672,7 +683,7 @@ body, html{
 /*Landscape-Phone Downwards*/
 @media (max-width: 480px) {
 
-    .nav ul li{
+    /*.nav ul li{
         display: block;
         height:38px;
     }
@@ -690,7 +701,7 @@ body, html{
         font-weight: 700;
         font-size: 10vw;
         letter-spacing: -0.05em;
-    }
+    }*/
 }
 
 
