@@ -55,6 +55,7 @@ body, html{
 @media only screen and (max-width: 380px) {
 	.about{
 		font-size: 12px;
+		line-height: 23px;
 	}
 }
 
@@ -129,6 +130,10 @@ body, html{
 	color: #FAB83D;
 }
 
+.mobileBreak{
+	display: none;
+}
+
 @media only screen and (max-width: 980px) {
 	.typeOne{
 		margin-top: 10px;
@@ -197,8 +202,14 @@ body, html{
 		text-decoration: none;
 		color: #FAB83D;
 	}
+
+	.mobileBreak{
+		display: block;
+	}
 	
 }
+
+
 
 .contact{
 	margin-top: 30%;
