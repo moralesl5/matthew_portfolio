@@ -176,6 +176,9 @@ $(document).ready(function(){
 
 	var logoWhite = document.getElementsByClassName("logo_white")[0]
 
+	// Get in touch link
+	var getInTouch = document.getElementsByClassName("typeNine")[0].getElementsByTagName("A")[0];
+
 	// When user clicks button, open Modal
 	var modalOn = function(){
 	   modal.style.display = "block";
@@ -229,6 +232,10 @@ $(document).ready(function(){
 
 	contactLink.onclick = function(){
 		modalOff();
+		showContact();
+	}
+
+	getInTouch.onclick = function(){
 		showContact();
 	}
 
