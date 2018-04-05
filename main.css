@@ -1,3 +1,11 @@
+/*
+1. Hamburger menu not ligned up with logo
+2. 'Hello' way too close to logo
+3. have to scroll to bottom 
+
+*/
+
+
 body, html{
 	padding: 0;
 	margin:0;
@@ -46,7 +54,7 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.about{
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 
@@ -123,6 +131,7 @@ body, html{
 
 @media only screen and (max-width: 980px) {
 	.typeOne{
+		margin-top: 10px;
 		font-size: 30px;
 		height: 20px;
 	}	
@@ -134,21 +143,21 @@ body, html{
 	}
 
 	.typeThree{
-		margin-top: 15px;
+		margin-top: 10px;
 		/*font-size: 1.2em;*/
 		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeFour{
-		margin-top: 15px;
+		margin-top: 10px;
 		/*font-size: 1.2em;*/
 		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeFive{
-		margin-top: 15px;
+		margin-top: 10px;
 		/*font-size: 1.2em;*/
 		/*width: 80vw;*/
 		color: white;
@@ -160,7 +169,7 @@ body, html{
 	}
 
 	.typeSix{
-		margin-top: 20px;
+		margin-top: 10px;
 		/*font-size: 1.2em;*/
 		/*width: 80vw;*/
 		color: white;
@@ -179,7 +188,7 @@ body, html{
 	}
 
 	.typeNine{
-		margin-top: 20px;
+		margin-top: 10px;
 		/*font-size: 1.2em;*/
 		/*width: 80vw;*/
 		color: white;
