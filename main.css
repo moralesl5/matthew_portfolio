@@ -231,7 +231,8 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.contact{
-		margin-top: 100%;
+		margin-top: 77%;
+		font-size: 12px;
 	}
 }
 
@@ -259,6 +260,15 @@ body, html{
 	height: 50px;
 	width: 50px;
 }
+
+
+@media only screen and (max-width: 380px) {
+	.contactLinks li a img{
+		height: 30px;
+		width: 30px;
+	}
+}
+
 
 /*.container {
  	background-image:  url(./resources/Logo_white.png), url(./resources/matthew_main.jpg);

@@ -206,7 +206,8 @@ $(document).ready(function(){
 	// }
 
 	var showContact = function(){
-		aboutDiv.css("display", "none")
+		aboutDiv.css("display", "none");
+		aboutDiv.css("overflow", "hidden");
 		contactDiv.style.display = "block";
 		overlay.css("background-color","rgba(0,0,0,0.3)")
 	}
@@ -216,6 +217,7 @@ $(document).ready(function(){
 	}
 
 	logoWhite.onclick = function(){
+		aboutDiv.css("overflow", "initial");
 		aboutDiv.css("transition", "");
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
@@ -224,6 +226,7 @@ $(document).ready(function(){
 
 	logoBlack.onclick = function(){
 		modalOff();
+		aboutDiv.css("overflow", "initial");
 		aboutDiv.css("transition", "");
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
