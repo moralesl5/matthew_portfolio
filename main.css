@@ -231,7 +231,7 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.contact{
-		margin-top: 77%;
+		margin-top: 78%;
 		font-size: 12px;
 	}
 }
@@ -243,13 +243,21 @@ body, html{
 	color: #FAB83D;
 }
 
-/*.contactLinks{
-	margin-top: 40px;
-}*/
+.contactLinks{
+	margin-top: 17px;
+	padding: 0px;
+}
 
 .contactLinks li{
 	display: inline;
 	padding: 10px 7px;
+}
+
+@media only screen and (max-width: 380px) {
+	.contactLinks li{
+		display: inline;
+		padding: 15px 3px;
+	}
 }
 
 .contactLinks li a{
