@@ -26,7 +26,7 @@ body, html{
 	position: absolute;
 	left: 7%;
 	top: 20vh;
-	height: 100%;
+	/*height: 100%;*/
 	/*margin-left: -50px;
 	margin-right: -50px;*/
 	width: 81%;
@@ -231,7 +231,7 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.contact{
-		margin-top: 82%;
+		margin-top: 106%;
 		font-size: 12px;
 	}
 }
@@ -306,16 +306,16 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.container {
- 	background-image:url(./resources/matthew_wide.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	background-attachment: fixed;
-	width: 	100%;
-	padding-top: 25%;
-	height: 100vh;
-}
+	 	background-image:url(./resources/matthew_wide.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		background-attachment: fixed;
+		width: 	100%;
+		padding-top: 25%;
+		height: 100vh;
+	}
 }
 
 /*@media (max-width: 716px) {
