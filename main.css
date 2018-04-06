@@ -58,7 +58,7 @@ body, html{
 		top: 13vh;
 		font-size: 12px;
 		line-height: 20px;
-		height: 100vh;
+		height: auto;
 	}
 }
 
@@ -231,7 +231,7 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.contact{
-		margin-top: 110%;
+		margin-top: 100%;
 	}
 }
 
@@ -242,10 +242,9 @@ body, html{
 	color: #FAB83D;
 }
 
-.contactLinks{
+/*.contactLinks{
 	margin-top: 40px;
-	list-style-type: none;
-}
+}*/
 
 .contactLinks li{
 	display: inline;
