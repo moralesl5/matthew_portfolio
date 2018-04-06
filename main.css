@@ -37,6 +37,7 @@ body, html{
 	text-rendering: geometricPrecision;
 }
 
+/*ADD QUERY FOR HEIGHT - IPHONE 6 VS IPHONE SE/5*/
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1281px) {
 	.about{
