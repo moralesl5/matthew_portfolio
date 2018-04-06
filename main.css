@@ -55,6 +55,7 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.about{
+		top: 13vh;
 		font-size: 12px;
 		line-height: 20px;
 		height: 100vh;
