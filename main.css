@@ -51,6 +51,15 @@ body, html{
 	}
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.about{
+		top: 14vh;
+		font-size: 25px;
+		line-height: 30px;
+		height: auto;
+	}
+}
+
 
  
 
@@ -171,6 +180,64 @@ body, html{
 	
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.typeOne{
+		margin-top: 30px;
+		font-size: 50px;
+		height: 30px;
+	}	
+
+	.typeTwo{
+		color: white;
+	}
+
+	.typeThree{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFour{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFive{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFive a{
+		text-decoration: none;
+		color: #FAB83D;
+	}
+
+	.typeSix{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeSeven{
+		color: white;
+	}
+
+	.typeEight{
+		color: white;
+	}
+
+	.typeNine{
+		margin-top: 20px;
+		color: white;
+	}
+	.typeNine a{
+		text-decoration: none;
+		color: #FAB83D;
+	}
+
+	.mobileBreak{
+		display: block;
+	}
+}
+
 
 
 .contact{
@@ -192,6 +259,19 @@ body, html{
 	.contact{
 		margin-top: 106%;
 		font-size: 12px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.contact{
+		margin-top: 47%;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.contact{
+		margin-top: 80%;
 	}
 }
 
