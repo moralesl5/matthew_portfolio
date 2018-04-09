@@ -266,7 +266,6 @@ body, html{
 	.contact{
 		margin-top: 47%;
 	}
-
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
@@ -401,6 +400,33 @@ body, html{
 	}
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.menu{
+		right: 25px;
+		top: 55px;
+		width: 70px;
+		height: 70px;
+		background-size: 30px 25px;
+	}
+
+	.logo_white{
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		width: 225px;
+		height: auto;
+	}
+
+	.logo_black{
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		width: 225px;
+		height: auto;
+	}
+}
+
+
 @media only screen and (max-width: 480px) {
 
 	.container {
@@ -452,6 +478,17 @@ body, html{
 		background-size: 25px 20px;
 	}
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.menu{
+		right: 25px;
+		top: 55px;
+		width: 70px;
+		height: 70px;
+		background-size: 30px 25px;
+	}
+}
+
 
 
 /*Fake-Trigger*/
