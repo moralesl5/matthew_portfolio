@@ -26,7 +26,6 @@ body, html{
 	text-rendering: geometricPrecision;
 }
 
-/*ADD QUERY FOR HEIGHT - IPHONE 6 VS IPHONE SE/5*/
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1281px) {
 	.about{
@@ -249,7 +248,7 @@ body, html{
 
 
 .contact{
-	margin-top: 33.5%;
+	margin-top: 34%;
 	text-align: center;
 	display: none;
 	font-family: matthewFont;
@@ -293,13 +292,6 @@ body, html{
 	margin-top: 17px;
 	padding: 0px;
 }
-
-/*@media only screen and (max-width: 380px) {
-	.contactLinks{
-		margin-top: 13px;
-		padding: 0px;
-	}
-}*/
 
 .contactLinks li{
 	display: inline;
