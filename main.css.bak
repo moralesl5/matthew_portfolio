@@ -1,11 +1,3 @@
-/*
-1. Hamburger menu not ligned up with logo
-2. 'Hello' way too close to logo
-3. have to scroll to bottom 
-
-*/
-
-
 body, html{
 	padding: 0;
 	margin:0;
@@ -26,9 +18,6 @@ body, html{
 	position: absolute;
 	left: 7%;
 	top: 20vh;
-	/*height: 100%;*/
-	/*margin-left: -50px;
-	margin-right: -50px;*/
 	width: 81%;
 	color: #FAB83D;
 	opacity: 3;
@@ -37,7 +26,6 @@ body, html{
 	text-rendering: geometricPrecision;
 }
 
-/*ADD QUERY FOR HEIGHT - IPHONE 6 VS IPHONE SE/5*/
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1281px) {
 	.about{
@@ -62,6 +50,23 @@ body, html{
 	}
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.about{
+		font-size: 17px;
+		line-height: 25px;
+
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.about{
+		top: 14vh;
+		font-size: 25px;
+		line-height: 30px;
+		height: auto;
+	}
+}
+
 
  
 
@@ -72,29 +77,21 @@ body, html{
 
 
 .typeTwo{
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
 .typeThree{
 	margin-top: 26px;
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
 .typeFour{
 	margin-top: 26px;
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
 .typeFive{
 	margin-top: 26px;
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
@@ -105,14 +102,10 @@ body, html{
 
 .typeSix{
 	margin-top: 26px;
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
 .typeSeven{
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 
@@ -124,8 +117,6 @@ body, html{
 
 .typeNine{
 	margin-top: 26px;
-	/*font-size: 1.2em;*/
-	/*width: 80vw;*/
 	color: white;
 }
 .typeNine a{
@@ -145,29 +136,21 @@ body, html{
 	}	
 
 	.typeTwo{
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeThree{
 		margin-top: 10px;
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeFour{
 		margin-top: 10px;
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeFive{
 		margin-top: 10px;
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
@@ -178,27 +161,19 @@ body, html{
 
 	.typeSix{
 		margin-top: 10px;
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeSeven{
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeEight{
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 
 	.typeNine{
 		margin-top: 10px;
-		/*font-size: 1.2em;*/
-		/*width: 80vw;*/
 		color: white;
 	}
 	.typeNine a{
@@ -212,10 +187,68 @@ body, html{
 	
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.typeOne{
+		margin-top: 30px;
+		font-size: 50px;
+		height: 30px;
+	}	
+
+	.typeTwo{
+		color: white;
+	}
+
+	.typeThree{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFour{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFive{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeFive a{
+		text-decoration: none;
+		color: #FAB83D;
+	}
+
+	.typeSix{
+		margin-top: 20px;
+		color: white;
+	}
+
+	.typeSeven{
+		color: white;
+	}
+
+	.typeEight{
+		color: white;
+	}
+
+	.typeNine{
+		margin-top: 20px;
+		color: white;
+	}
+	.typeNine a{
+		text-decoration: none;
+		color: #FAB83D;
+	}
+
+	.mobileBreak{
+		display: block;
+	}
+}
+
 
 
 .contact{
-	margin-top: 30%;
+	margin-top: 34%;
 	text-align: center;
 	display: none;
 	font-family: matthewFont;
@@ -231,8 +264,20 @@ body, html{
 
 @media only screen and (max-width: 380px) {
 	.contact{
-		margin-top: 106%;
+		margin-top: 93%;
 		font-size: 12px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.contact{
+		margin-top: 41%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.contact{
+		margin-top: 80%;
 	}
 }
 
@@ -277,21 +322,6 @@ body, html{
 	}
 }
 
-
-/*.container {
- 	background-image:  url(./resources/Logo_white.png), url(./resources/matthew_main.jpg);
-	background-repeat: no-repeat;
-	background-size: 45% auto, cover;
-	background-position: 5% 3%, center;
-	position: absolute;
-	width: 	100%;
-	
-
-	padding-top: 177.8%; 
-}
-*/
-
-
 .container {
  	background-image:url(./resources/matthew_wide.jpg);
 	background-repeat: no-repeat;
@@ -317,18 +347,6 @@ body, html{
 		height: 100vh;
 	}
 }
-
-/*@media (max-width: 716px) {
-	.container {
- 	background-image:url(./resources/matthew_main.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	background-attachment: fixed;
-	width: 	100%;
-	padding-top: 177.8%; 
-}*/
 
 /* OVERLAY */
 .overlay{
@@ -389,44 +407,32 @@ body, html{
 	}
 }
 
-/*.black:before {
-  background-color: rgba(0,0,0,0.7);
-  transition: .5s ease;
-}*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.menu{
+		right: 25px;
+		top: 55px;
+		width: 70px;
+		height: 70px;
+		background-size: 30px 25px;
+	}
 
-/*.signature{
-	position: static;
-	z-index: 10;
-	width: 50%;
-	height: auto;
-	background-image: url(./resources/Logo_white.png);
-	background-size: cover;
-	background-position: center;
+	.logo_white{
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		width: 225px;
+		height: auto;
+	}
+
+	.logo_black{
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		width: 225px;
+		height: auto;
+	}
 }
 
-.content{
-	position: relative;
-	z-index: 5;
-	height: auto;
-	width: 100%;
-}*/
-
-/*.content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction	: column;
-  -ms-flex-direction		  : column;
-  flex-direction			    : column;
-  -webkit-justify-content	: center; 
-  justify-content			    : center; 
-
-  position: absolute;
-  top: 0; bottom: 0; left: 30px; right: 30px;
-}*/
 
 @media only screen and (max-width: 480px) {
 
@@ -438,7 +444,6 @@ body, html{
     	top: 0; bottom: 0; left: 0; right: 0;
 		padding: 30px;
 	}
-
 }
 
 
@@ -447,7 +452,6 @@ body, html{
 .modal-sign{
 	z-index: -1; /* THIS FIXED THE NAV LINK PROBLEM */
 	display: none;
-	/*display: block;*/
 	position: absolute;
 	background-image:  url(./resources/Logo_black.png);
 	background-repeat: no-repeat;
@@ -480,30 +484,19 @@ body, html{
 		height: 50px;
 		background-size: 25px 20px;
 	}
-
-}
-/*.menu span {
-    margin: 0 auto;
-    position: relative;
-    top: 12px;
 }
 
-.menu span:before, .menu span:after {
-    position: absolute;
-    content: '';
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	.menu{
+		right: 25px;
+		top: 55px;
+		width: 70px;
+		height: 70px;
+		background-size: 30px 25px;
+	}
 }
-.menu span, .menu span:before, .menu span:after {
-    width: 30px;
-    height: 6px;
-    background-color: #FFF0A5;
-    display: block;
-}
-.menu span:before {
-    margin-top: -12px;
-}
-.menu span:after {
-    margin-top: 12px;
-}*/
+
+
 
 /*Fake-Trigger*/
 #sized {
@@ -670,36 +663,12 @@ body, html{
 }
 
 #navContact{
-	/*position: absolute;*/
 	margin-top: 70px;
 }
 
 
 
 /*Mobile Optimization*/
-/* Portrait Tablet to Landscape and Desktop */
-@media (min-width:768px) and (max-width:979px) {
-
-    /*.nav ul li{
-        display: block;
-        height: 45px;
-    }
-
-    .nav ul {
-        clear: both;
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-
-    .nav ul li a {
-        padding: 0;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 6vw;
-        letter-spacing: -0.05em;
-    }*/
-}
 
 /* Landscape-Phone to Portrait Tablet*/
 @media (max-width:767px) {
@@ -734,26 +703,6 @@ body, html{
 		position: absolute;
 		font-size: 12px;
 	}
-
-    /*.nav ul li{
-        display: block;
-        height:38px;
-    }
-
-    .nav ul {
-        clear: both;
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-
-    .nav ul li a {
-        padding: 0;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 10vw;
-        letter-spacing: -0.05em;
-    }*/
 }
 
 
