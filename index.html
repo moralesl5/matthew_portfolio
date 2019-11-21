@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<!-- <meta charset="UTF-8"> -->
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<title>Matthew is Grateful</title>
 	<link rel="stylesheet" href="main.css">
 	<script src='jquery.js'></script>
@@ -11,6 +11,7 @@
 	<script src='main.js'></script>
 </head>
 <body>
+	<frame>
 	<div class="container">
 		<div class="overlay visuallyHidden hidden">	
 				<img class = "logo_white" src="./resources/Logo_white.png" alt="">
@@ -29,8 +30,7 @@
 						</div>
 						<div class="modal-body nav">
 							<ul> 
-								<li>Musings<br>
-								<span id="comingSoon">COMING SOON</span></li>
+								<li id='navMusings'>Musings</li>
 								<br>
 								<li id='navContact'>Contact</li>
 							</ul>
@@ -70,6 +70,15 @@
 					</li>
 					<li></li>
 				</ul>
+			</div>
+
+			<div class="musings">
+				<embed src='https://docs.google.com/viewer?url=https://s3.us-east-2.amazonaws.com/loganmorales.com/pdf_test/Rookie+Leaders%E2%80%99+%5BSilent%5D+Plea+for+Help+June+10+2019.pdf&pid=explorer&efh=false&a=v&chrome=false&embedded=true' width="1000px" height="480px" frameborder="0" style='position: absolute; height: 100vh;
+		    width: 50%;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    box-shadow:0 0 20px rgba(0,0,0,0.8);'></embed>
 			</div>
 	</div>
 </body>

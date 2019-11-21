@@ -322,6 +322,10 @@ body, html{
 	}
 }
 
+.musings{
+	display: none;
+}
+
 .container {
  	background-image:url(./resources/matthew_wide.jpg);
 	background-repeat: no-repeat;
@@ -453,7 +457,6 @@ body, html{
 	z-index: -1; /* THIS FIXED THE NAV LINK PROBLEM */
 	display: none;
 	position: absolute;
-	background-image:  url(./resources/Logo_black.png);
 	background-repeat: no-repeat;
 	background-size: 45% auto;
 	background-position: 5% 3%;

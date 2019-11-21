@@ -171,11 +171,7 @@ $(document).ready(function(){
 
 	// modal links
 	var aboutLink = document.getElementById("navAbout");
-	
-	var musingsLink = document.getElementById("navMusings");
-	
-	var musingsDiv = document.getElementsByClassName("musings")[0]
-	
+	// var musingsLink = document.getElementById("navMusings");
 	var contactLink = document.getElementById("navContact");
 
 	var logoWhite = document.getElementsByClassName("logo_white")[0]
@@ -211,7 +207,6 @@ $(document).ready(function(){
 
 	var showContact = function(){
 		aboutDiv.css("display", "none");
-		musingsDiv.style.display = "none";
 		background.style.paddingTop = "0px";
 		contactDiv.style.display = "block";
 		overlay.css("background-color","rgba(0,0,0,0.3)")
@@ -221,20 +216,12 @@ $(document).ready(function(){
 		contactDiv.style.display = "none"
 	}
 
-	var showMusings = function(){
-		aboutDiv.css("display", "none");
-		background.style.paddingTop = "0px";
-		musingsDiv.style.display = "block";
-		overlay.css("background-color","rgba(0,0,0,0.7)");
-	}
-
 	logoWhite.onclick = function(){
 		background.style.paddingTop = "25%";
 		aboutDiv.css("transition", "");
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
 		contactDiv.style.display = "none";
-		musingsDiv.style.display = "none";
 	}
 
 	logoBlack.onclick = function(){
@@ -244,17 +231,11 @@ $(document).ready(function(){
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
 		contactDiv.style.display = "none";
-		musingsDiv.style.display = "none";
 	}
 
 	contactLink.onclick = function(){
 		modalOff();
 		showContact();
-	}
-
-	musingsLink.onclick = function(){
-		modalOff()
-		showMusings()
 	}
 
 	getInTouch.onclick = function(){
@@ -278,3 +259,19 @@ $(document).ready(function(){
 	 }
 });
 // END OF jQUERY
+
+	html = top.document.getElementsByTagName("html")[0]
+	var children = html.childNodes;
+
+
+	for (var i = 0; i < children.length; i++){
+		if (children[i].nodeName == "FRAMESET"){
+			console.log('THERE IS A FRAME')
+			head = top.document.getElementsByTagName('head')[0]
+			meta = top.document.createElement("meta")
+			meta.setAttribute("name","viewport")
+			meta.setAttribute("content","width=device-width")
+			meta.setAttribute("initial-scale","1")
+			head.appendChild(meta)
+		}
+	}
