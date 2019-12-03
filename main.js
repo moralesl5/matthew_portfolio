@@ -3,6 +3,7 @@ console.log("JS Linked");
 // START JQUERY
 $(document).ready(function(){
 	console.log('jQuery Linked');
+	var query = window.location.search;
 
 	// About Section
 	var aboutDiv = $(".about")
@@ -30,116 +31,6 @@ $(document).ready(function(){
       		overlay.removeClass('visuallyHidden');
       		aboutDiv.removeClass('visuallyHidden');
     	}, 20);
-
-  //   	var typewriter = new Typewriter(textOne, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		wrapperClassName: "textOne",
-  //   		typingSpeed: 50
-		// });
-
-		// typewriter.pauseFor(1000)
-		// 	.typeString('Hello.')
-		// 	.start();
-
-		// var typewriter2 = new Typewriter(textTwo, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textTwo"
-		// });
-
-		// typewriter2.pauseFor(2500)
-		// 	.typeString('I am happy you are here.')
-		// 	.start();
-
-		// var typewriter3 = new Typewriter(textThree, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textThree"
-		// });
-
-		// typewriter3.pauseFor(4000)
-		// 	.typeString('A little bit about me...')
-		// 	.start();
-
-		// var typewriter4 = new Typewriter(textFour, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textFour"
-		// });
-
-		// typewriter4.pauseFor(6000)
-		// 	.typeString('I am a meditator, reader, writer and lover of life.')
-		// 	.start();
-
-		// var typewriter5 = new Typewriter(textFive, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textFive"
-		// });
-
-		// typewriter5.pauseFor(8000)
-		// 	.typeString("I founded three companies, the first when I was 22, creating a marketplace that provides convenient and affordable access to fitness clubs and healthy living. I am currently CEO of Goalspriing which is reinventing coaching for the modern workforce. I\'ve coached more than 100 executives at private, venture-backed companies since our inception.")
-		// 	.start();
-
-		// var typewriter6 = new Typewriter(textSix, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textSix"
-		// });
-
-		// typewriter6.pauseFor(21000)
-		// 	.typeString('This quote speaks to who i am.')
-		// 	.start();
-
-		// var typewriter7 = new Typewriter(textSeven, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textSeven"
-		// });
-
-		// typewriter7.pauseFor(24000)
-		// 	.typeString('"The master in the art of living makes little distinction between his work and his play, his labor and his leisure, his mind and his body, his education and his recreation, his love and his religion. He hardly knows which is which. He simply pursues his vision of excellence at whatever he does, leaving others to decide whether he is working or playing. To him he is always doing both."')
-		// 	.start();
-
-		// var typewriter8 = new Typewriter(textEight, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textEight"
-		// });
-
-		// typewriter8.pauseFor(38000)
-		// 	.typeString('- L.P. Jacks')
-		// 	.start();
-
-		// var typewriter9 = new Typewriter(textNine, {
-  //   		loop: false,
-  //   		animateCursor: false,
-  //   		cursor: "",
-  //   		typingSpeed: 30,
-  //   		wrapperClassName: "textNine"
-		// });
-
-		// typewriter9.pauseFor(40000)
-		// 	.typeString('Please get in touch with me if you are interested in coaching or collaborating on life enhancing ventures.')
-		// 	.start();
-
-
 	}, 2000);
 
 	// $.backstretch("./resources/matthew_main.jpg");
@@ -210,6 +101,10 @@ $(document).ready(function(){
 	// }
 
 	var showContact = function(){
+		// var href = window.location.href;
+		// if (query == "?musings=Rookie_Leaders") {
+		// 	window.location = href.replace("?musings=Rookie_Leaders","")
+		// }
 		aboutDiv.css("display", "none");
 		musingsDiv.style.display = "none";
 		background.style.paddingTop = "0px";
@@ -221,23 +116,34 @@ $(document).ready(function(){
 		contactDiv.style.display = "none"
 	}
 
+
 	var showMusings = function(){
 		aboutDiv.css("display", "none");
 		background.style.paddingTop = "0px";
 		musingsDiv.style.display = "block";
 		overlay.css("background-color","rgba(0,0,0,0.7)");
+		// var href = window.location.href;
+		// if (query != "?musings=Rookie_Leaders") {
+		// 	window.location = href.concat("?musings=Rookie_Leaders")
+		// }
+		
 	}
 
-	logoWhite.onclick = function(){
+	logoWhite.onclick = function(event){
 		background.style.paddingTop = "25%";
 		aboutDiv.css("transition", "");
 		aboutDiv.css("display", "block");
 		overlay.css("background-color","rgba(0,0,0,0.7)")
 		contactDiv.style.display = "none";
 		musingsDiv.style.display = "none";
+		// var href = window.location.href;
+		// if (query == "?musings=Rookie_Leaders") {
+		// 	window.location = href.replace("?musings=Rookie_Leaders","")
+		// 	event.preventDefault();
+		// }
 	}
 
-	logoBlack.onclick = function(){
+	logoBlack.onclick = function(event){
 		modalOff();
 		background.style.paddingTop = "25%";
 		aboutDiv.css("transition", "");
@@ -245,20 +151,29 @@ $(document).ready(function(){
 		overlay.css("background-color","rgba(0,0,0,0.7)")
 		contactDiv.style.display = "none";
 		musingsDiv.style.display = "none";
+		// var href = window.location.href;
+		// if (query == "?musings=Rookie_Leaders") {
+		// 	window.location = href.replace("?musings=Rookie_Leaders","")
+		// 	event.preventDefault();
+		// }
 	}
 
-	contactLink.onclick = function(){
+	contactLink.onclick = function(event){
 		modalOff();
 		showContact();
+		event.preventDefault();
 	}
 
-	musingsLink.onclick = function(){
+	musingsLink.onclick = function(event){
 		modalOff()
+		hideContact()
 		showMusings()
+		event.preventDefault();
 	}
 
-	getInTouch.onclick = function(){
+	getInTouch.onclick = function(event){
 		showContact();
+		event.preventDefault();
 	}
 
 	btn.onclick = function() {
@@ -269,12 +184,16 @@ $(document).ready(function(){
 		modalOff();
 	};
 
+	if (query == "?musings=Rookie_Leaders") {
+		modalOff();
+		showMusings();
+	}
 
 	// When user clicks anywhere outside of the Modal, close Modal
-	 window.onclick = function(event) {
+	window.onclick = function(event) {
 	    if (event.target == modal) {
 	       modal.style.display = "none";
 	    }
-	 }
+	}
 });
 // END OF jQUERY
